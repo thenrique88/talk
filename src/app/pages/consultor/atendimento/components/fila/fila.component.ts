@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
@@ -11,7 +11,8 @@ import { ItemFilaComponent } from '../item-fila/item-fila.component';
   standalone: true,
   imports: [ItemFilaComponent, MatTabsModule, MatIconModule, MatInputModule, MatFormFieldModule, MatExpansionModule],
   templateUrl: './fila.component.html',
-  styleUrl: './fila.component.scss'
+  styleUrl: './fila.component.scss',
+  encapsulation: ViewEncapsulation.None
 })
 export class FilaComponent {
   panelOpenState = false;
