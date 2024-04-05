@@ -1,0 +1,63 @@
+<mat-tab-group animationDuration="200ms">
+    <mat-tab label="Em Espera (3)">
+        <div class="w-100 pt-4 px-3">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-icon matSuffix>search</mat-icon>
+                <input matInput placeholder="Buscar conversas">
+            </mat-form-field>
+        </div>
+        <div class="pt-3">
+            <mat-accordion multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <b>Atendimento Prioritário</b>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <app-item-fila></app-item-fila>
+                    <app-item-fila></app-item-fila>
+                    <app-item-fila></app-item-fila>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <b>Outros Atendimentos</b>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <app-item-fila></app-item-fila>
+                    <app-item-fila></app-item-fila>
+                </mat-expansion-panel>
+                
+            </mat-accordion>
+
+        </div>
+    </mat-tab>
+    <mat-tab label="Em Atendimento"> 
+    
+        <div class="pt-3">
+            <mat-accordion multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <b>Em Atendimento</b>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <app-item-fila></app-item-fila>
+                    <app-item-fila></app-item-fila>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <b>Aguardando Resposta</b>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <app-item-fila></app-item-fila>
+                    <app-item-fila></app-item-fila>
+                </mat-expansion-panel>
+                
+            </mat-accordion>
+
+        </div>
+
+    </mat-tab>
+</mat-tab-group>

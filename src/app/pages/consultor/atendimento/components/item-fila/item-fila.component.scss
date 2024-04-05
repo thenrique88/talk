@@ -1,0 +1,95 @@
+.pai {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D5DCE9;
+}
+
+.foto{
+    width: 15%;
+    display: flex;  
+}
+
+.bola{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #A9C6F9;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dados{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+   
+
+    .up{
+        display: flex;
+
+        .nome{
+            width: 70%;
+            font-weight: bold;
+        }
+        .hora{
+            width: 30%;
+            display: flex;
+
+            .container-hora{
+                width: 60%;
+                text-align: end;
+                padding-right: 10px;
+            }
+
+            .container-marcador{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: end;
+                padding-right: 10px;
+            }
+
+            .marcador-vermelho{
+                width: 100%;
+                height: 10px;
+                border-radius: 5px;
+                background-color: #E9605D;
+            }
+        }
+    }
+
+    .down{
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .container-mensagem{
+            width: 90%;
+        }
+
+        .container-pin{
+            .pin{
+                display: flex;  
+            }
+            
+            .bola{
+                display: flex;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #3462BB;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                font-size: 12px;
+                
+
+            }
+        }
+    }
+}

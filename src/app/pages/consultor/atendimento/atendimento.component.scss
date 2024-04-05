@@ -1,0 +1,19 @@
+.pai{
+    display: flex;
+}
+
+.fila{
+    width: 30%;
+    margin-right: 10px;
+}
+
+.chat{
+    width: 70%;
+    margin-left: 10px;
+}
+
+.full-h{
+    height: calc(100vh - 80px - 30px);
+    background-color: #ffffff;
+    border-radius: 16px;
+}
